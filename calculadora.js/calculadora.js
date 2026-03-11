@@ -12,19 +12,28 @@
             if ( operador === "+" ){
                 resultado = operando1 + operando2;
             } else if  ( operador === "-"){
-                resultado = operando1 + operando2;
+                resultado = operando1 - operando2;
             } else if ( operador === "*"){
-                resultando = operando1 * operando2;
+                resultado = operando1 * operando2;
             } else if ( operador === "/" ){
-                resultado = operando1 / operando
+                resultado = operando1 / operando2;
             } else {
-                alert("Operador invalido!");
-                return
+                alert("Não é possivel dividir por zero."); 
+                 continua = prompt("Digite sim para continuar e não encerrar.")
+                 if(continua === "não"){
+                    return
+                    {
+                    resultado = operando1 / operando2;
+                    }
+                 } else {
+                    
+                 }
+                return           
             }
-               
+            if ((operador != "/" || operando2 != 0))      
             alert("resultado: " +
                 operando1 + " " + operador + " " + operando2 + " = " + resultado);
            
-            }
+            }   
         
         }
